@@ -20,7 +20,12 @@ function operate(x,y,o){
     return add(first,second);
 
 }
-
+let inputString = document.querySelectorAll(".numbers , .operators");
+for(let i = 0 ; i< inputString.length ; i++){
+    inputString[i].addEventListener('click', (e)=>{
+        console.log(e.target.textContent);
+    })
+}
 function add(x,y){
     console.log(x+y);
     return x+y;
