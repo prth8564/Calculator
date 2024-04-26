@@ -1,6 +1,6 @@
-let str = "1+2+3+4";
+let str = "45+2+3+4";
 let arr = Array.from(str);
-let arr2 = ['1','+','2','+','3','+','6'];
+let arr2 = ['5','+','2','+','3','+','6'];
 console.log(arr2);
 let sum = 0;
 for(let i=0;i<=arr.length;i++){
@@ -21,11 +21,14 @@ function operate(x,y,o){
 
 }
 let inputString = document.querySelectorAll(".numbers , .operators");
+let inputfield = document.querySelector("input");
 for(let i = 0 ; i< inputString.length ; i++){
     inputString[i].addEventListener('click', (e)=>{
+        inputfield.value = inputfield.value +e.target.textContent;
         console.log(e.target.textContent);
     })
 }
+
 function add(x,y){
     console.log(x+y);
     return x+y;

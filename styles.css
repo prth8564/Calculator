@@ -2,3 +2,11 @@
     display:flex;
     
 }
+button{
+    width:120px;
+    height:120px;
+    font-size: 50px;
+}
+input{
+    width:473px;
+}
