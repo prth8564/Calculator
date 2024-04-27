@@ -67,6 +67,9 @@ deleteButton.addEventListener('click' , (e) => {
 
 
 let equalButton = document.querySelector("#equals");
+equalButton.addEventListener('click' , (e) =>{
+    operate(num1 , num2 , operator);
+})
 function add(x,y){
     let addRes = x+y;
     inputfield.value = addRes;
